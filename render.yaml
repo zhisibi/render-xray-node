@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: render-xray
+    runtime: node
+    plan: free
+    region: singapore
+    buildCommand: bash setup-xray.sh
+    startCommand: node index.js
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_UUID
+        sync: false
+      - key: WS_PATH
+        sync: false
+      - key: SUB_TOKEN
+        sync: false
+      - key: REMARK
+        value: Render-SG

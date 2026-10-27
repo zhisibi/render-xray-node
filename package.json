@@ -1,0 +1,1 @@
+{"description":"Node supervisor for Xray VLESS+WS behind Render edge TLS","engines":{"node":">=18"},"main":"index.js","name":"render-xray-node","private":true,"scripts":{"start":"node index.js"},"version":"1.0.0"}
